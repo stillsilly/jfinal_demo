@@ -1,0 +1,16 @@
+<fieldset class="solid">
+	<legend>todo</legend>
+	<input type="hidden" name="todo.id" value="#(todo.id??)" />
+	<div>
+		<label>标题</label>
+		<input type="text" name="todo.title" value="#(todo.title??)" />#(titleMsg)
+	</div>
+	<div>
+		<label>内容</label>
+		<textarea name="todo.content" cols="80" rows="10">#(todo.content??)</textarea>#(contentMsg)
+	</div>
+	<div>
+		<label>&nbsp;</label>
+		<input value="提交" type="submit">
+	</div>
+</fieldset>
