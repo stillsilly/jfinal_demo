@@ -2,6 +2,20 @@ CREATE DATABASE jfinal_demo;
 
 USE jfinal_demo;
 
+CREATE TABLE `member` (
+  `id` int(11) NOT NULL auto_increment,
+  `name` varchar(40) NOT NULL,
+  `signature` mediumtext NOT NULL,
+   `password` varchar(20) NOT NULL,
+  PRIMARY KEY  (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+INSERT INTO `member` VALUES ('1', 'yy', 'im yy','password');
+INSERT INTO `member` VALUES ('2', 'yyy', 'i am yyy','password');
+INSERT INTO `member` VALUES ('3', 'yangyang', 'wo shi yangyang','password');
+INSERT INTO `member` VALUES ('4', 'haha', 'lalala','password');
+INSERT INTO `member` VALUES ('5', 'socute', 'hahahah','password');
+
 CREATE TABLE `todo` (
   `id` int(11) NOT NULL auto_increment,
   `title` varchar(200) NOT NULL,

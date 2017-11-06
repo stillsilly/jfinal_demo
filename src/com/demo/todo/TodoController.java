@@ -13,7 +13,7 @@ public class TodoController extends Controller{
 
     static TodoService service = new TodoService();
     public void index(){
-        System.out.println(getParaToInt("id"));
+        System.out.println(getPara());
         if(getParaToInt("id") == null){
             setAttr("todoList",service.findAll());
             render("index.html");

@@ -1,0 +1,17 @@
+#@layout()
+#define main()
+<h1>TodoList ---&gt; 登录
+</h1>
+<div class="form_box">
+	<form action="/login/api" method="post" class="login-form">
+		<div>
+			<input type="text" placeholder="请输入用户名"  name="name" class="name-ipt"> <span class="error-span">#(userErrMessage)</span>
+		</div>
+		<div>
+			<input type="password" placeholder="请输入密码" name="password" class="psw-ipt"> <span  class="error-span">#(errMessage)</span>
+		</div>
+
+		<button>登录</button>
+	</form>
+</div>
+#end
